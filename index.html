@@ -1,354 +1,270 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Naomi & Levi — Wedding Invitation</title>
-  <style>
-    :root{
-      --sage:#7b8f7a;
-      --sage-dark:#5f745e;
-      --cream:#faf7f0;
-      --ink:#1f2937;
-      --muted:#6b7280;
-      --card:#ffffff;
-      --border:#e5e7eb;
-      --shadow:0 10px 30px rgba(0,0,0,.08);
-      --radius:18px;
-      --max:980px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      color:var(--ink);
-      background:
-        radial-gradient(1000px 600px at 20% 0%, rgba(123,143,122,.18), transparent 60%),
-        radial-gradient(900px 500px at 90% 20%, rgba(123,143,122,.12), transparent 55%),
-        linear-gradient(180deg, var(--cream), #fff);
-      min-height:100vh;
-    }
-    header{padding:42px 18px 24px;}
-    .wrap{max-width:var(--max); margin:0 auto;}
-    .hero{display:grid; grid-template-columns: 1.2fr .8fr; gap:18px;}
-    @media (max-width: 860px){.hero{grid-template-columns:1fr}}
-    .card{
-      background:var(--card);
-      border:1px solid var(--border);
-      box-shadow:var(--shadow);
-      border-radius:var(--radius);
-      padding:18px;
-    }
-    .title{margin:0 0 6px; font-weight:800; letter-spacing:.3px; font-size:clamp(28px,3.5vw,44px);}
-    .subtitle{margin:0 0 14px; color:var(--muted); font-size:16px; line-height:1.35;}
-    .badge{
-      display:inline-flex; gap:8px; align-items:center;
-      padding:8px 12px; border-radius:999px;
-      background:rgba(123,143,122,.12);
-      color:var(--sage-dark);
-      font-weight:700; font-size:14px;
-      border:1px solid rgba(123,143,122,.25);
-    }
-    .section{margin-top:18px;}
-    .section h2{margin:0 0 10px; font-size:18px;}
-    .info{display:grid; grid-template-columns: 1fr 1fr; gap:10px 14px;}
-    @media (max-width: 640px){.info{grid-template-columns:1fr}}
-    .kv{
-      padding:10px 12px;
-      border:1px dashed rgba(123,143,122,.35);
-      border-radius:14px;
-      background:rgba(123,143,122,.06);
-    }
-    .k{font-size:12px; color:var(--muted); margin-bottom:4px;}
-    .v{font-weight:800;}
-    label{display:block; font-size:13px; color:var(--muted); margin:10px 0 6px;}
-    input, select, textarea{
-      width:100%;
-      padding:11px 12px;
-      border-radius:12px;
-      border:1px solid var(--border);
-      background:#fff;
-      font-size:15px;
-      outline:none;
-    }
-    textarea{min-height:92px; resize:vertical}
-    input:focus, select:focus, textarea:focus{
-      border-color: rgba(123,143,122,.65);
-      box-shadow: 0 0 0 4px rgba(123,143,122,.12);
-    }
-    .grid2{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
-    @media (max-width: 640px){.grid2{grid-template-columns:1fr}}
-    .btnrow{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px;}
-    button{
-      border:0;
-      border-radius:12px;
-      padding:11px 14px;
-      font-weight:800;
-      cursor:pointer;
-    }
-    button:disabled{opacity:.6; cursor:not-allowed;}
-    .primary{background:var(--sage-dark); color:#fff;}
-    .ghost{background:#fff; border:1px solid var(--border); color:var(--ink);}
-    .divider{height:1px; background:var(--border); margin:14px 0;}
-    .note{
-      background:rgba(123,143,122,.07);
-      border:1px solid rgba(123,143,122,.22);
-      border-radius:14px;
-      padding:12px;
-      color:var(--ink);
-      font-size:13px;
-      line-height:1.4;
-    }
-    .photo{display:grid; grid-template-rows:auto 1fr auto; gap:12px;}
-    .photoBox{
-      border-radius:16px;
-      overflow:hidden;
-      border:1px solid var(--border);
-      background:linear-gradient(135deg, rgba(123,143,122,.15), rgba(123,143,122,.03));
-      min-height:280px;
-      position:relative;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-    .photoBox img{width:100%; height:100%; object-fit:cover; position:absolute; inset:0;}
-    .photoHint{padding:14px; text-align:center; color:var(--muted); z-index:1;}
-    .status{
-      margin-top:10px;
-      font-size:13px;
-      color:var(--muted);
-    }
-    .status strong{color:var(--ink)}
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Levi & Naomi — Wedding Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--sage:#7b8f7a;
+--sage-dark:#5f745e;
+--cream:#fbf8f1;
+--ink:#1f2937;
+--muted:#6b7280;
+--border:#e7e3da;
+--radius:22px;
+--shadow:0 16px 48px rgba(0,0,0,.10);
+}
+
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Inter,system-ui;
+color:var(--ink);
+background:
+radial-gradient(1200px 700px at 15% 0%, rgba(123,143,122,.22), transparent 60%),
+linear-gradient(180deg,var(--cream),#fff);
+}
+
+.wrap{max-width:1000px;margin:0 auto;padding:40px 18px 80px;}
+
+h1{
+font-family:"Cormorant Garamond",serif;
+font-size:clamp(38px,4vw,60px);
+margin:0;
+}
+
+.subtitle{color:var(--muted);margin-top:6px;}
+
+.card{
+background:#fffdf8;
+border:1px solid var(--border);
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+padding:22px;
+margin-top:22px;
+}
+
+.section{margin-top:20px;}
+.section h2{
+font-family:"Cormorant Garamond",serif;
+font-size:24px;
+margin-bottom:10px;
+}
+
+.countdown{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+margin-top:10px;
+}
+@media(max-width:600px){.countdown{grid-template-columns:repeat(2,1fr);}}
+
+.cd{
+background:rgba(123,143,122,.08);
+border-radius:16px;
+padding:14px;
+text-align:center;
+}
+.cd .num{font-size:28px;font-weight:900;}
+.cd .lab{font-size:12px;color:var(--muted);}
+
+label{display:block;margin:10px 0 6px;color:var(--muted);font-size:13px;}
+input,select,textarea{
+width:100%;padding:12px;border-radius:14px;
+border:1px solid var(--border);
+}
+textarea{min-height:90px;}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media(max-width:700px){.grid2{grid-template-columns:1fr;}}
+
+button{
+padding:12px 14px;
+border-radius:14px;
+border:0;
+font-weight:800;
+cursor:pointer;
+}
+.primary{background:var(--sage-dark);color:#fff;}
+.ghost{background:#fff;border:1px solid var(--border);}
+
+.mapWrap{
+border-radius:18px;
+overflow:hidden;
+margin-top:12px;
+border:1px solid var(--border);
+}
+
+.regRow{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;}
+.regRow a{
+text-decoration:none;
+padding:12px 14px;
+border-radius:14px;
+background:rgba(123,143,122,.08);
+color:var(--ink);
+font-weight:800;
+border:1px solid rgba(95,116,94,.2);
+}
+
+.status{margin-top:10px;font-size:13px;}
+
+.gate{
+position:fixed;inset:0;
+background:rgba(0,0,0,.75);
+display:flex;align-items:center;justify-content:center;
+z-index:999;
+}
+.gateCard{
+background:#fff;
+padding:24px;
+border-radius:20px;
+max-width:400px;
+width:90%;
+text-align:center;
+}
+</style>
 </head>
 
 <body>
-<header>
-  <div class="wrap">
-    <div class="hero">
 
-      <!-- Left -->
-      <div class="card">
-        <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
-          <h1 class="title" style="margin-right:auto;">Levi & Naomi</h1>
-          <span class="badge">📅 August 22</span>
-          <span class="badge">🌿 Neutrals + Sage</span>
-        </div>
-        <p class="subtitle">
-          You’re invited to celebrate our wedding! Please RSVP below so we can plan food and seating.
-        </p>
+<!-- PASSWORD GATE -->
+<div class="gate" id="gate">
+<div class="gateCard">
+<h2>Enter Invite Password</h2>
+<input type="password" id="passInput" placeholder="Password"/>
+<button class="primary" onclick="checkPass()">Enter</button>
+<div class="status" id="gateMsg"></div>
+</div>
+</div>
 
-        <div class="section">
-          <h2>Event Info</h2>
-          <div class="info">
-            <div class="kv"><div class="k">Location</div><div class="v">Phillips Ford Park — Baker City, OR</div></div>
-            <div class="kv"><div class="k">Date</div><div class="v">August 22</div></div>
-            <div class="kv"><div class="k">Style</div><div class="v">Rustic outdoor</div></div>
-            <div class="kv"><div class="k">Dress</div><div class="v">Comfortable & Cool</div></div>
-          </div>
-        </div>
+<div class="wrap">
 
-        <div class="divider"></div>
+<h1>Naomi & Levi</h1>
+<p class="subtitle">Rustic outdoor wedding • Phillips Ford Park • August 22, 2026</p>
 
-        <div class="section">
-          <h2>RSVP</h2>
-          <form id="rsvpForm">
-            <label>Household/Guest Name *</label>
-            <input id="name" required placeholder="e.g., The Smiths / John & Jerry" />
+<div class="card">
+<div class="section">
+<h2>Countdown</h2>
+<div class="countdown">
+<div class="cd"><div class="num" id="d"></div><div class="lab">Days</div></div>
+<div class="cd"><div class="num" id="h"></div><div class="lab">Hours</div></div>
+<div class="cd"><div class="num" id="m"></div><div class="lab">Minutes</div></div>
+<div class="cd"><div class="num" id="s"></div><div class="lab">Seconds</div></div>
+</div>
+</div>
+</div>
 
-            <div class="grid2">
-              <div>
-                <label>Invited (#)</label>
-                <input id="invited" type="number" min="1" step="1" placeholder="e.g., 2" />
-              </div>
-              <div>
-                <label>RSVP (Y/N/No response)</label>
-                <select id="rsvp">
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-                  <option value="No response">No response</option>
-                </select>
-              </div>
-            </div>
+<div class="card">
+<h2>RSVP</h2>
+<form id="rsvpForm">
+<label>Household/Guest Name *</label>
+<input id="name" required/>
 
-            <div class="grid2">
-              <div>
-                <label>Attending count</label>
-                <input id="attending" type="number" min="0" step="1" placeholder="e.g., 2" />
-              </div>
-              <div>
-                <label>Kids (Y/N + count)</label>
-                <input id="kids" placeholder="e.g., N / Y (2)" />
-              </div>
-            </div>
+<div class="grid2">
+<div><label>Invited (#)</label><input id="invited" type="number"/></div>
+<div><label>RSVP</label>
+<select id="rsvp">
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+<option value="No response">No response</option>
+</select>
+</div>
+</div>
 
-            <label>Meal choice (if applicable)</label>
-            <input id="meal" placeholder="e.g., Taco bar / BBQ / Veg / N/A" />
+<label>Attending count</label>
+<input id="attending" type="number"/>
 
-            <label>Dietary notes (GF/veg/allergy)</label>
-            <textarea id="diet" placeholder="e.g., Gluten-free, vegetarian, nut allergy"></textarea>
+<label>Meal choice</label>
+<input id="meal"/>
 
-            <div class="grid2">
-              <div>
-                <label>Phone</label>
-                <input id="phone" placeholder="e.g., 412-555-0123" />
-              </div>
-              <div>
-                <label>Email</label>
-                <input id="email" type="email" placeholder="e.g., you@email.com" />
-              </div>
-            </div>
+<label>Dietary notes</label>
+<textarea id="diet"></textarea>
 
-            <label>Table assignment (optional)</label>
-            <input id="table" placeholder="Leave blank (you can assign later in the sheet)" />
+<label>Phone</label>
+<input id="phone"/>
 
-            <div class="btnrow">
-              <button class="primary" type="submit" id="submitBtn">Submit RSVP</button>
-              <button class="ghost" type="button" id="clearBtn">Clear</button>
-            </div>
+<label>Email</label>
+<input id="email"/>
 
-            <div class="status" id="status"></div>
+<div style="margin-top:12px;">
+<button class="primary" type="submit">Submit RSVP</button>
+</div>
 
-            <div class="note" style="margin-top:12px;">
-              RSVPs are sent directly into the shared Google Sheet (no local storage).
-            </div>
-          </form>
-        </div>
-      </div>
+<div class="status" id="status"></div>
+</form>
+</div>
 
-      <!-- Right -->
-      <div class="card photo">
-        <div>
-          <h2 style="margin:0 0 6px;">Add a Photo</h2>
-          <p class="subtitle" style="margin:0;">
-            Upload a photo to personalize the invite (preview only).
-          </p>
-        </div>
+<div class="card">
+<h2>Location</h2>
+<div class="mapWrap">
+<iframe loading="lazy"
+src="https://www.google.com/maps?q=Phillips%20Ford%20Park%20Baker%20City%20OR&output=embed"
+height="300" width="100%">
+</iframe>
+</div>
+</div>
 
-        <div class="photoBox">
-          <div class="photoHint" id="photoHint">
-            <div style="font-size:38px; margin-bottom:6px;">📷</div>
-            <div><strong>Choose a photo</strong> to display here.</div>
-            <div>Couple photo, rustic landscape, or sage/neutral themed image.</div>
-          </div>
-          <img id="photoPreview" alt="" style="display:none;" />
-        </div>
+<div class="card">
+<h2>Registry</h2>
+<div class="regRow">
+<a href="https://example.com" target="_blank">Registry #1</a>
+<a href="https://example.com" target="_blank">Registry #2</a>
+<a href="https://example.com" target="_blank">Honeymoon Fund</a>
+</div>
+</div>
 
-        <div>
-          <label for="photoInput">Upload photo (JPG/PNG)</label>
-          <input id="photoInput" type="file" accept="image/*" />
-          <div class="btnrow">
-            <button class="ghost" type="button" id="removePhoto">Remove Photo</button>
-          </div>
-          <div class="status">
-            Tip: If you want a permanent image for everyone, tell me and I’ll convert this to use a hosted file like <strong>hero.jpg</strong>.
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</header>
+</div>
 
 <script>
-  // ✅ ONLY THING YOU MUST CHANGE:
-  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz4pKpDOFRdHoOA91JoOLxyyS57b8Hr4k1sF-j59Eimrv50_eg9a-oMfWVeooJ-zdNp/exec";
+const GOOGLE_SCRIPT_URL="https://script.google.com/macros/s/AKfycbz4pKpDOFRdHoOA91JoOLxyyS57b8Hr4k1sF-j59Eimrv50_eg9a-oMfWVeooJ-zdNp/exec";
+const TARGET_DATE="2026-08-22T16:30:00";
+const PASSWORD="sagegreen";
 
-  const statusEl = document.getElementById("status");
-  const submitBtn = document.getElementById("submitBtn");
+function checkPass(){
+if(document.getElementById("passInput").value===PASSWORD){
+document.getElementById("gate").style.display="none";
+}else{
+document.getElementById("gateMsg").textContent="Incorrect password";
+}
+}
 
-  function setStatus(msg, type="info"){
-    const prefix = type === "ok" ? "✅ " : type === "err" ? "❌ " : "";
-    statusEl.innerHTML = `<strong>${prefix}${msg}</strong>`;
-  }
+function updateCountdown(){
+const t=new Date(TARGET_DATE)-new Date();
+if(t<0)return;
+document.getElementById("d").textContent=Math.floor(t/86400000);
+document.getElementById("h").textContent=Math.floor((t%86400000)/3600000);
+document.getElementById("m").textContent=Math.floor((t%3600000)/60000);
+document.getElementById("s").textContent=Math.floor((t%60000)/1000);
+}
+setInterval(updateCountdown,1000);
+updateCountdown();
 
-  document.getElementById("clearBtn").addEventListener("click", () => {
-    document.getElementById("rsvpForm").reset();
-    setStatus("");
-  });
-
-  document.getElementById("rsvpForm").addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL.includes("PASTE_YOUR_WEB_APP_URL_HERE")) {
-      setStatus("Admin setup needed: paste your Google Web App URL into GOOGLE_SCRIPT_URL.", "err");
-      return;
-    }
-
-    const rsvp = {
-      name: document.getElementById("name").value.trim(),
-      invited: document.getElementById("invited").value.trim(),
-      rsvp: document.getElementById("rsvp").value,
-      attending: document.getElementById("attending").value.trim(),
-      meal: document.getElementById("meal").value.trim(),
-      diet: document.getElementById("diet").value.trim(),
-      kids: document.getElementById("kids").value.trim(),
-      phone: document.getElementById("phone").value.trim(),
-      email: document.getElementById("email").value.trim(),
-      table: document.getElementById("table").value.trim(),
-      timestamp: new Date().toISOString()
-    };
-
-    if (!rsvp.name){
-      setStatus("Please enter Household/Guest Name.", "err");
-      return;
-    }
-    if (rsvp.rsvp === "No" && !rsvp.attending) rsvp.attending = "0";
-
-    try{
-      submitBtn.disabled = true;
-      setStatus("Submitting RSVP…");
-
-      const resp = await fetch(GOOGLE_SCRIPT_URL, {
-        method: "POST",
-        headers: { "Content-Type": "text/plain;charset=utf-8" },
-        body: JSON.stringify(rsvp)
-      });
-
-      const text = await resp.text();
-      let result;
-      try { result = JSON.parse(text); }
-      catch { result = { ok:false, error:text }; }
-
-      if (!result.ok){
-        setStatus("RSVP failed: " + (result.error || "Unknown error"), "err");
-        submitBtn.disabled = false;
-        return;
-      }
-
-      setStatus("RSVP submitted! Thank you.", "ok");
-      e.target.reset();
-
-    } catch (err){
-      setStatus("RSVP failed (network error): " + err.message, "err");
-    } finally {
-      submitBtn.disabled = false;
-    }
-  });
-
-  // Photo preview (local only)
-  const photoInput = document.getElementById("photoInput");
-  const photoPreview = document.getElementById("photoPreview");
-  const photoHint = document.getElementById("photoHint");
-
-  photoInput.addEventListener("change", () => {
-    const file = photoInput.files && photoInput.files[0];
-    if(!file) return;
-    const reader = new FileReader();
-    reader.onload = (ev) => {
-      photoPreview.src = ev.target.result;
-      photoPreview.style.display = "block";
-      photoHint.style.display = "none";
-    };
-    reader.readAsDataURL(file);
-  });
-
-  document.getElementById("removePhoto").addEventListener("click", () => {
-    photoInput.value = "";
-    photoPreview.src = "";
-    photoPreview.style.display = "none";
-    photoHint.style.display = "block";
-  });
+document.getElementById("rsvpForm").addEventListener("submit",async e=>{
+e.preventDefault();
+const data={
+name:name.value,
+invited:invited.value,
+rsvp:rsvp.value,
+attending:attending.value,
+meal:meal.value,
+diet:diet.value,
+phone:phone.value,
+email:email.value,
+timestamp:new Date().toISOString()
+};
+const resp=await fetch(GOOGLE_SCRIPT_URL,{
+method:"POST",
+headers:{"Content-Type":"text/plain;charset=utf-8"},
+body:JSON.stringify(data)
+});
+const txt=await resp.text();
+document.getElementById("status").textContent="RSVP submitted!";
+});
 </script>
+
 </body>
 </html>
